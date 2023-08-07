@@ -1,0 +1,145 @@
+/* App.css */
+
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+.board {
+  display: flex;
+}
+
+.column {
+  flex: 1;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  min-width: 330px;
+  height: fit-content;
+}
+
+.column h3 {
+  margin: 0 0 10px;
+  padding: 5px;
+  background-color: #0079bf;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.card {
+  position: relative;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card p {
+  margin: 0;
+  flex-grow: 1;
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+}
+
+.edit-icon,
+.delete-icon {
+  cursor: pointer;
+  font-size: 18px;
+  margin: 0 3px;
+  color: #aaa;
+}
+
+.edit-icon:hover,
+.delete-icon:hover {
+  color: #0079bf;
+}
+
+/* Styles for textarea and save button in edit mode */
+
+.edit-input-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.card.edit-mode textarea {
+  flex-grow: 1; /* Take full available space */
+  resize: none;
+  padding: 5px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.card.edit-mode .save-button {
+  margin-top: 5px;
+  cursor: pointer;
+  background-color: #0079bf;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 0px 25px;
+}
+
+/* Style for the input to add a new card */
+input[type='text'] {
+  flex-grow: 1;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+/* Style for the button to add a new card */
+button {
+  padding: 5px 10px;
+  background-color: #0079bf;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #005a8a;
+}
+
+/* Style for the container of the "AddColumn" component */
+.add-column-container {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+/* Style for the input to add a new column */
+.add-column-container input[type='text'] {
+  flex-grow: 1;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+/* Style for the button to add a new column */
+.add-column-container button {
+  padding: 5px 10px;
+  background-color: #0079bf;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-column-container button:hover {
+  background-color: #005a8a;
+}
